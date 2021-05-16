@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    <script defer src="script.js"></script>
+    <title>Step From Heaven</title>
+    <nav>
+        <a href="index.html"><img class="NavIcon" src="data:image/png;base64,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" alt="InstaIcon"></a>
+        <img class="SearchBar" src="https://follows-bc85.kxcdn.com/blog/wp-content/uploads/2018/12/Search-Bar-on-Instagram.jpg" alt="InstaIcon">
+        <button class="logInButton" data-logInModalTarget="#logInModal">Log In</button>
+    </nav>
+</head>
+
+
+<body>
+    <div class="topAll">
+        <div class="topProfile">
+            <div class="topPic">
+                <div class="inTopPic">
+                    <img class="ProfilePic" src="https://img3.goodfon.com/wallpaper/nbig/d/c0/waves-ocean-beach.jpg" alt="ProfilePic">  
+                </div>
+            </div>
+            <div class="topInfo">
+                <div class="NameFollow">
+                    <h2 class="Username">parkyoungju</h2>
+                    <button class="followButton" id="followButton">Follow</button>
+                </div>
+                <div class="pfflist">
+                    <a class="pffPosts" href="#postSection">9 posts  </a>
+                    <a class="pffPosts" href="followers.html">7 followers</a>
+                    <a class="pffPosts" href="followers.html">5 following</a>
+                </div>
+                <p class="discription">Hardworking, hopeful, and a believer are what I am. Graduated from a great college despite my poor background. This was all possible because I come from a family of dreamers.</p>
+            </div>
+        </div>
+
+        <!-- Story Modal Button -->
+
+        <div class="storyList">
+            <div class="inStoryList">
+                <figure class="storyFigure">
+                    <button class="storyButton" data-storyModalTarget="#modal-AmandaParty"><img class="story" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/181478113_141460344665760_2496080490084901064_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=tMDUh4GWImkAX8yYiLt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=2e5d594fe3483156e03ecf1f999e6950&oe=60C0EE2C" alt="post picture"></button>
+                    <figcaption class="storyCaption">My BFF's Birthday</figcaption>
+                </figure>
+                <figure class="storyFigure">
+                    <button class="storyButton" data-storyModalTarget="#modal-Lottery"><img class="story" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/182252236_149870700437729_2291826791533543628_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=bMnyaVUsUbQAX9_AAFl&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=e99a9dfc185a49fbace8bb28a74010ec&oe=60C1B58B" alt="post picture"></button>
+                    <figcaption class="storyCaption">I'm Feeling Lucky</figcaption>
+                </figure>
+                <figure class="storyFigure">
+                    <button class="storyButton" data-storyModalTarget="#modal-Drinks"><img class="story" src="https://cdn.fbsbx.com/v/t59.2708-21/183824545_324764505672985_8898559098794321503_n.gif?_nc_cat=100&ccb=1-3&_nc_sid=041f46&_nc_ohc=4DcKt7r4GBMAX8R2og4&_nc_ht=cdn.fbsbx.com&oh=c0472ae0d8f8c7b87cbb38d366fce8b1&oe=609C9205" alt="post picture"></button>
+                    <figcaption class="storyCaption">Rainy Days are the Best</figcaption>
+                </figure>
+                <figure class="storyFigure">
+                    <button class="storyButton" data-storyModalTarget="#modal-WavyHair"><img class="story" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184205859_970398383708165_5975984958053542459_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=TIdIlG67W_4AX82QgCo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=4e5b985ea085093ec7273252ca6998b0&oe=60BEF3A9" alt="post picture"></button>
+                    <figcaption class="storyCaption">곱슬 머리 나쁜</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="storyModal" id="modal-AmandaParty">
+        <button data-close-button class="close-button">&times;</button>
+        <img class="storyModalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/181478113_141460344665760_2496080490084901064_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=tMDUh4GWImkAX8yYiLt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=2e5d594fe3483156e03ecf1f999e6950&oe=60C0EE2C" alt="modal pic">
+    </div>
+    <div class="storyModal" id="modal-Lottery">
+        <button data-close-button class="close-button">&times;</button>
+        <img class="storyModalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/182252236_149870700437729_2291826791533543628_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=bMnyaVUsUbQAX9_AAFl&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=e99a9dfc185a49fbace8bb28a74010ec&oe=60C1B58B" alt="modal pic">
+    </div>
+    <div class="storyModal" id="modal-Drinks">
+        <button data-close-button class="close-button">&times;</button>
+        <img class="storyModalPic" src="https://cdn.fbsbx.com/v/t59.2708-21/183824545_324764505672985_8898559098794321503_n.gif?_nc_cat=100&ccb=1-3&_nc_sid=041f46&_nc_ohc=4DcKt7r4GBMAX8R2og4&_nc_ht=cdn.fbsbx.com&oh=c0472ae0d8f8c7b87cbb38d366fce8b1&oe=609C9205" alt="modal pic">
+    </div>
+    <div class="storyModal" id="modal-WavyHair">
+        <button data-close-button class="close-button">&times;</button>
+        <img class="storyModalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184205859_970398383708165_5975984958053542459_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=TIdIlG67W_4AX82QgCo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=4e5b985ea085093ec7273252ca6998b0&oe=60BEF3A9" alt="modal pic">
+    </div>
+
+
+
+    <!-- Post Modal Button -->
+
+    <div class="lineDiv">    
+        <hr class="line"  id="postSection">
+    </div>
+    <div class="postList">
+        <div class="inPostList">
+            <button class="post" data-modal-target="#modal-JobInterview"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183795125_2503212533158192_5605750536921972442_n.png?_nc_cat=101&ccb=1-3&_nc_sid=aee45a&_nc_ohc=uyZzO4xTiBEAX-_nVw8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=5db8a3c7d95d889b9218f878f8881fca&oe=60C022AF" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-Graduation"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184183724_298280938607448_1221893809069438663_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=8o1SZfjK6z0AX8feK-j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=785be3b1e18ca2a5a86608f176244280&oe=60C1C2A2" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-NewHouse"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183141686_859173304947131_65597396989171878_n.png?_nc_cat=103&ccb=1-3&_nc_sid=aee45a&_nc_ohc=kCf9FcJvok0AX8e9RkJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=6b0e80af7997adfe8fe2ffe0ddd3389e&oe=60C15F6A" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-Awards"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/182731278_198128098792009_7534224217889562936_n.png?_nc_cat=109&ccb=1-3&_nc_sid=aee45a&_nc_ohc=TwQzBXNhC0wAX9rK_Z1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=79057fc0aaaf74446156760c6d21b243&oe=60C15D30" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-HalmoniDeath"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183257421_482449012814309_3732049165868600370_n.png?_nc_cat=108&ccb=1-3&_nc_sid=aee45a&_nc_ohc=GW95WgKlrL0AX8H4aZE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=1a117a64543c995370b8147c0ef6fe50&oe=60C01067" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-Harry"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183542043_494497254928084_4422041367703083323_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=lmTKPo6E8_sAX_0h4_D&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7305d4a12f64621aa5a103eb33378bdf&oe=60BEF48C" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-Flowers"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184897644_318144353024114_3373987040732182438_n.png?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_ohc=R-Br5iN13vMAX9EkXfZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=96d36a7c1912300a36b5c383ef519c5f&oe=60C193EB" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-Brother"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183229399_1933987006757526_6849884809649724923_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=bxms74x2jJAAX_rlVDw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=e40316a21f0cd7be51fb0f27b8f9732e&oe=60C09558" alt="post picture"></button>
+            <button class="post" data-modal-target="#modal-America"><img class="postPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184019138_577351786790152_457269178730878624_n.png?_nc_cat=103&ccb=1-3&_nc_sid=aee45a&_nc_ohc=oCDCMKVvVNAAX9ICOo0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=f09e152cf9659f3fa02d673fe5067f85&oe=60BF02BF" alt="post picture"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+
+
+    <!-- Post Modal -->
+    
+    <div class="modal" id="modal-JobInterview">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183795125_2503212533158192_5605750536921972442_n.png?_nc_cat=101&ccb=1-3&_nc_sid=aee45a&_nc_ohc=uyZzO4xTiBEAX-_nVw8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=5db8a3c7d95d889b9218f878f8881fca&oe=60C022AF" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">My first official job interview as a child therapist! Wish me luck!</p>
+                <hr class="commentDivLine">
+
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> Good luck!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183863289_493974785282402_5698895738694220361_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=cuC-7UpnlBoAX-VqU3m&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=6112f6118dafed4b82f45b63bb15dbfc&oe=60C3AA84" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> Child therapist? I might need that! 😆</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186535844_178378697408268_6510380789651271800_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=R5O8y7yTwX4AX8xz6Lw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=065d2678637f1e79ef9255080629325e&oe=60C3D384" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> What company are you working for?</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186470649_757415898302303_8183342472853316518_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=qMVojnyVyNcAX9d_YpV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=671cfd806c2b5197df6b611bf57c0884&oe=60C4DA34" alt="followersPrp">
+                        <p class="commentText"> <b>parkjoonho</b> Lol, this job is so like you</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-Graduation">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184183724_298280938607448_1221893809069438663_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=8o1SZfjK6z0AX8feK-j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=785be3b1e18ca2a5a86608f176244280&oe=60C1C2A2" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">Graduation day! Finally graduated from colllege with my friend. Now it's time to pursue my future!❤️❤️</p>
+                <hr class="commentDivLine">
+                
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> You're doing great my baby girl!❤️</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184011699_488786905690229_4332072431996960954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Bv5Pn8Je7UcAX90F5u1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7204775003fa09ab46c310c5ea7e0821&oe=60C63169" alt="followersPrp">
+                        <p class="commentText"> <b>gomo</b> Congratulations, you're gonna have a bright future.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186538748_319128832930542_592686899729028651_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=agpVFsvkYkkAX-THen-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=fdc502f4ccafde9531457ee8f947a49a&oe=60C3F86F" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> You graduated from xxxx college? That's a good school.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-NewHouse">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183141686_859173304947131_65597396989171878_n.png?_nc_cat=103&ccb=1-3&_nc_sid=aee45a&_nc_ohc=kCf9FcJvok0AX8e9RkJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=6b0e80af7997adfe8fe2ffe0ddd3389e&oe=60C15F6A" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">We're moving in to our now house and it looks to nice! The grass is so green and soft too! 😍</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186470649_757415898302303_8183342472853316518_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=qMVojnyVyNcAX9d_YpV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=671cfd806c2b5197df6b611bf57c0884&oe=60C4DA34" alt="followersPrp">
+                        <p class="commentText"> <b>parkjoonho</b> It is the best thing ever.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184373545_753118722020649_9211569634458105037_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=dsur7kYUwcoAX_vfgs5&_nc_oc=AQkGyfpAJoEyP81BnAScuXQmZKAPgkfbB0QCvssuTp_-EnzgNCTu7dxfzqFm-Lm1fLh4glmnfoFyG2NsWo-Yetck&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ed83dc62390684abe75ef7cb0cf9d89c&oe=60C6E143" alt="followersPrp">
+                        <p class="commentText"> <b>amanda</b> Well maintained and cute looking, perfect for you.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/185993913_469852934081359_4645895519124899954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=LmLzsXlGahAAX8YAqs2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=f72f905eb5d4d3b3fbef81dccc386ef6&oe=60C3FB1E" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> I looks nice.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="" alt="followersPrp">
+                        <p class="commentText"> <b>adamlucas</b> That looks exactly like my shack!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-Awards">
+        <div class="modalBody">
+            <button data-close-button class="close-button"> &times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/182731278_198128098792009_7534224217889562936_n.png?_nc_cat=109&ccb=1-3&_nc_sid=aee45a&_nc_ohc=TwQzBXNhC0wAX9rK_Z1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=79057fc0aaaf74446156760c6d21b243&oe=60C15D30" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">Higest GPA for me and top of Engilish class for my bff! What are you thoughts? 😆</p>
+                <hr class="commentDivLine">
+
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186470649_757415898302303_8183342472853316518_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=qMVojnyVyNcAX9d_YpV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=671cfd806c2b5197df6b611bf57c0884&oe=60C4DA34" alt="followersPrp">
+                        <p class="commentText"> <b>parkjoonho</b> Pretty goo I guess.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184357053_173803334657233_8177014242408820946_n.png?_nc_cat=102&ccb=1-3&_nc_sid=aee45a&_nc_ohc=VzVf1qyoUeEAX8f0drD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=1d8ab222a40ce3721afc62e0e05d64c1&oe=60C75D06" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> Wow, I’m so jealous!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184107105_271422171361648_1432232883209705783_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=JAVTwiTzR8IAX9J5kGX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ddd6f318b5b6886ddf3947b3a36853ca&oe=60C65250" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> I also got that too! Hardwork is always rewarded.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184011699_488786905690229_4332072431996960954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Bv5Pn8Je7UcAX90F5u1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7204775003fa09ab46c310c5ea7e0821&oe=60C63169" alt="followersPrp">
+                        <p class="commentText"> <b>gomo</b> Congrats, keep on workng hard, both of you.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> ❤, That’s my girl, I'm proud of you.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-HalmoniDeath">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183257421_482449012814309_3732049165868600370_n.png?_nc_cat=108&ccb=1-3&_nc_sid=aee45a&_nc_ohc=GW95WgKlrL0AX8H4aZE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=1a117a64543c995370b8147c0ef6fe50&oe=60C01067" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">We just got news that my Halmoni died in Korea. Rest in peace, I love you.</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183987291_162267445751686_7043855644035205232_n.png?_nc_cat=106&ccb=1-3&_nc_sid=aee45a&_nc_ohc=DJA6jQrb8n4AX97DAse&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=18734675a2859e6acc05afe68d4cbf25&oe=60C64F0F" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> I know how you feel, my grandpa died last year too.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184011699_488786905690229_4332072431996960954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Bv5Pn8Je7UcAX90F5u1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7204775003fa09ab46c310c5ea7e0821&oe=60C63169" alt="followersPrp">
+                        <p class="commentText"> <b>gomo</b> It's unfortunate, but we shouldn't let that drag us down.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186510076_152568163505076_9100909803245982229_n.png?_nc_cat=102&ccb=1-3&_nc_sid=aee45a&_nc_ohc=obd4EhgMUJcAX_zLKVZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ccda209ca3733b0c78784da6d56d2f1b&oe=60C65DAB" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> She looked like a very calm and wise person.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184373545_753118722020649_9211569634458105037_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=dsur7kYUwcoAX_vfgs5&_nc_oc=AQkGyfpAJoEyP81BnAScuXQmZKAPgkfbB0QCvssuTp_-EnzgNCTu7dxfzqFm-Lm1fLh4glmnfoFyG2NsWo-Yetck&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ed83dc62390684abe75ef7cb0cf9d89c&oe=60C6E143" alt="followersPrp">
+                        <p class="commentText"> <b>amanda</b> I hope you feel better soon.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-Harry">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183542043_494497254928084_4422041367703083323_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=lmTKPo6E8_sAX_0h4_D&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7305d4a12f64621aa5a103eb33378bdf&oe=60BEF48C" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">My brother and I found a injured bird and it's so cute! Any suggestions for it's name?</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184373545_753118722020649_9211569634458105037_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=dsur7kYUwcoAX_vfgs5&_nc_oc=AQkGyfpAJoEyP81BnAScuXQmZKAPgkfbB0QCvssuTp_-EnzgNCTu7dxfzqFm-Lm1fLh4glmnfoFyG2NsWo-Yetck&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ed83dc62390684abe75ef7cb0cf9d89c&oe=60C6E143" alt="followersPrp">
+                        <p class="commentText"> <b>amanda</b> Awww, it's so cute. What about naming it Harry?</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184222382_270867354762938_2287203013548548989_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Q9gM9UTRXpkAX_52n0e&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=db39e6325426e27179eb175a16df8448&oe=60C7188D" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> I hope it gets better soon.What about naming it xxxx.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/186470649_757415898302303_8183342472853316518_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=qMVojnyVyNcAX9d_YpV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=671cfd806c2b5197df6b611bf57c0884&oe=60C4DA34" alt="followersPrp">
+                        <p class="commentText"> <b>parkjoonho</b> We are caring for it, and soon we will teach it to fly!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184011699_488786905690229_4332072431996960954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Bv5Pn8Je7UcAX90F5u1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7204775003fa09ab46c310c5ea7e0821&oe=60C63169" alt="followersPrp">
+                        <p class="commentText"> <b>gomo</b> I think xxxx is a good name for it</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-Flowers">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184897644_318144353024114_3373987040732182438_n.png?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_ohc=R-Br5iN13vMAX9EkXfZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=96d36a7c1912300a36b5c383ef519c5f&oe=60C193EB" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">I will never lie to God again and pray everyday like I am supposed to from now on. Thank you for helping me God.</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184011699_488786905690229_4332072431996960954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Bv5Pn8Je7UcAX90F5u1&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7204775003fa09ab46c310c5ea7e0821&oe=60C63169" alt="followersPrp">
+                        <p class="commentText"> <b>gomo</b> It's good that you won't lie again, but what does that mean?</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/185993913_469852934081359_4645895519124899954_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=LmLzsXlGahAAX8YAqs2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=f72f905eb5d4d3b3fbef81dccc386ef6&oe=60C3FB1E" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> ??? This is weird.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> What are you talking about?</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183192692_316368166510431_6351598998883587788_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=5KyO2cgWnY0AX_x-NgH&_nc_oc=AQl0HVl3ZXzKCXmgHRyA7aTIqNgh_Pk8P6eYagexIu5Z522rtpNMTw04Uo6cRAVgY_MLEoik2_pkktF635e3Wklp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=21261fef826c5f76e31cba847c9fde51&oe=60C5A926" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> I don't know what you are taling about, but nice flowers.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-Brother">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183229399_1933987006757526_6849884809649724923_n.png?_nc_cat=104&ccb=1-3&_nc_sid=aee45a&_nc_ohc=bxms74x2jJAAX_rlVDw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=e40316a21f0cd7be51fb0f27b8f9732e&oe=60C09558" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">I got little brother now. Now I am big sister and have big responsability. 나는 더 이상 아이가 아닙니다! (I am no longer a child)</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> He is so cute!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/184107105_271422171361648_1432232883209705783_n.png?_nc_cat=100&ccb=1-3&_nc_sid=aee45a&_nc_ohc=JAVTwiTzR8IAX9J5kGX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=ddd6f318b5b6886ddf3947b3a36853ca&oe=60C65250" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> Can I steal him? My heart is melting.</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/185319050_316867796496729_1249517057276048958_n.png?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=c7AUK8aktQUAX_1Movg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=d7870f05427b276d09ddc8afbef9a47a&oe=60C695E2" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> That's nice, but what does the last part say?</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/187324057_3847246242063902_6982344959104501087_n.png?_nc_cat=106&ccb=1-3&_nc_sid=aee45a&_nc_ohc=QTYJhtDJ3QoAX8LISEn&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7a2f20a22710bde826b8a5bf2d952d26&oe=60C59165" alt="followersPrp">
+                        <p class="commentText"> <b>apa</b> He will grow up to become someone great!</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-America">
+        <div class="modalBody">
+            <button data-close-button class="close-button">&times;</button>
+            <img class="modalPic" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/184019138_577351786790152_457269178730878624_n.png?_nc_cat=103&ccb=1-3&_nc_sid=aee45a&_nc_ohc=oCDCMKVvVNAAX9ICOo0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=f09e152cf9659f3fa02d673fe5067f85&oe=60BF02BF" alt="modal pic">
+            <div class="modalDiscriptionDiv">
+                <p class="modalDiscription">우리는 하나님과 할아버지를 만나러 올라갈 것입니다. 이제 엄마와 아빠는 싸우지 않고 항상 웃을 것입니다! (We will go up to meet God and Grandpa. Now Mom and Dad will not fight and will always laugh!)</p>
+                <hr class="commentDivLine">
+                <div class="commentSection">
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/185368741_299480305148154_9083101824908666835_n.png?_nc_cat=102&ccb=1-3&_nc_sid=aee45a&_nc_ohc=zXuFB4sH1xYAX-6nwkC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=1ae0cd02c138425b295eaff80aa1c828&oe=60C78161" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> 음, 확실히하기 위해서이게 당신이 죽는다는 뜻인가요?(Umm, just to make sure, does this mean you are dying?)</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183903207_762312607809582_4372536499498133672_n.png?_nc_cat=106&ccb=1-3&_nc_sid=aee45a&_nc_ohc=jg10MYj7sC0AX_-Pbmv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=9ab4db448cdb0247b39ca6d5628543b8&oe=60C54C50" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> @personabove 나는 그것이 (I think it does)</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183863289_493974785282402_5698895738694220361_n.png?_nc_cat=105&ccb=1-3&_nc_sid=aee45a&_nc_ohc=cuC-7UpnlBoAX-VqU3m&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=6112f6118dafed4b82f45b63bb15dbfc&oe=60C3AA84" alt="followersPrp">
+                        <p class="commentText"> <b>randomfollower</b> 당신이 죽으면 부모님이 기뻐 하시나요? 끔찍한 부모님! (Yuor parents will be happy when you're gone? Such terrible parents!)</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/187324057_3847246242063902_6982344959104501087_n.png?_nc_cat=106&ccb=1-3&_nc_sid=aee45a&_nc_ohc=QTYJhtDJ3QoAX8LISEn&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=7a2f20a22710bde826b8a5bf2d952d26&oe=60C59165" alt="followersPrp">
+                        <p class="commentText"> <b>apa</b> 무슨 말도 안되는 소리 야! (What nonsense are you talking about!)</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                    <div class="comment">
+                        <img class="commentPfp" src="https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/130493719_3384737761651772_6421464121904606956_n.png?_nc_cat=102&ccb=1-3&_nc_sid=aee45a&_nc_ohc=88AAvaIvV3UAX_8pMbh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=30&oh=54adf9ff576aa28c06678470d6555aaa&oe=60C6C81F" alt="followersPrp">
+                        <p class="commentText"> <b>uhmma</b> 거짓말은 나쁜 습관 박영주. (Lying is a bad habit park young ju.)</p>
+                        <button class="likeButton" id="likeButton">♡</button>
+                    </div>
+                </div>
+            </div>
+            <div class="textComment">
+                <input class="textBar" type="text" id="textBar" placeholder="comment">
+                <input class="submitButton" form="#textBar" type="submit">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Log In Modal -->
+    <div class="logInModal" id="logInModal" >
+        <h3 class="logInModalTitle">Accounts</h3>
+        <a href="index.html">
+            <button class="accounts">
+                <div>
+                    <img class="accountsPfp" src="https://img3.goodfon.com/wallpaper/nbig/d/c0/waves-ocean-beach.jpg" alt="pfp">
+                    <p class="accountName">parkyoungju</p>
+                </div>
+            </button>
+        </a>
+        <a href="index2.html">
+            <button class="accounts">
+                <div>
+                    <img class="accountsPfp" src="https://i.pinimg.com/originals/0e/b1/02/0eb102daf11926a526731b58ee59b342.jpg" alt="pfp">
+                    <p class="accountName">uhmma</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <div id="overlay"></div>
+
+    <footer class="footer">
+        <p>Created: May 6 - May 16 2021</p>
+        <p>Creator: Lin</p>
+    </footer>
+</body>
+</html>

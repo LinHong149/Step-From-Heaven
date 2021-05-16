@@ -1,0 +1,222 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 60%;
+    height: 85%;
+    padding: 5px;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.storyModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 30%;
+    height: 85%;
+    padding: 5px;
+}
+.storyModal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.logInModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 30%;
+    height: 35%;
+    padding: 30px;
+}
+.logInModal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.logInModalTitle {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.accounts {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+    display: inline-flex;
+}
+.accountsPfp {
+    margin: 5px 15px 5px 5px;
+    border: 1px black solid;
+    width: 80px;
+    height: 80px;
+    position: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+}
+.accountName {
+    float: left;
+    font-size: 20px;
+}
+.storyModalPic {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px grey solid;
+    border-radius: 15px;
+}
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.modalBody {
+    height: 100%;
+}
+.modalPic {
+    border: 1px grey solid;
+    border-radius: 15px;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+}
+.modalDiscriptionDiv {
+    /* border: 3px black solid; */
+    height: 85%;
+    width: 40%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    /* overflow: hidden; */
+    /* overflow-x: clip; */
+}
+.modalDiscription {
+    height: 20%;
+    /* border: 3px black solid; */
+    font-size: 20px;
+    overflow-y: scroll;
+}
+.commentDivLine {
+    /* border: 3px black solid; */
+    margin-top: 0px;
+    width: 100%;
+}
+.commentSection {
+    /* height: 70%; */
+    overflow-y: scroll;
+    width: auto;
+    height: 70%;
+    /* height: 10%; */
+    /* border: 3px black solid; */
+}
+.comment {
+    /* border: 3px black solid; */
+    width: 95%;
+    margin: 8px 0;
+    display: inline-flex;
+}
+.commentPfp {
+    border: 0.5px grey solid;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px 0 5px;
+}
+.commentText {
+    position: relative;
+    /* border: 3px black solid; */
+    font-size: 16px;
+    top: -5px;
+}
+.likeButton {
+    /* cursor: pointer; */
+    border: none;
+    background: none;
+    position: absolute;
+    font-size: 25px;
+    /* left: 95%;
+    top: 5px; */
+    right: 18px;
+    color: rgb(211, 28, 58);
+}
+.textComment {
+    width: 40%;
+    height: 35px;
+    /* border: 3px black solid; */
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    margin-left: 5px;
+    display: flex;
+}
+.textBar {
+    font-size: 18px;
+    border: 1px grey solid;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 2%;
+}
+.submitButton {
+    border: 1px grey solid;
+    font-size: 18px;
+    margin-left: auto;
+    width: 18%;
+    height: 100%;
+    border-radius: 5px;
+}
+.story {
+    cursor: pointer;
+    border: 1px grey solid;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    object-fit: cover;
+}
+.storyCaption {
+    text-align: center;
+}
+.storyButton {
+    border-radius: 50%;
+    border: none;
+}
