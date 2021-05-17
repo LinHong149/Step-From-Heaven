@@ -46,6 +46,7 @@ nav {
     display: flex;
     border-radius: 15px;
     background-color: rgb(226, 225, 225);
+    /* text-decoration: none; */
 }
 .followersPfp {
     width: 100px;
@@ -59,6 +60,8 @@ nav {
 .personName {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
 }
 .logInButton {
     position: absolute;
@@ -201,4 +204,8 @@ section .followersPerson {
 }
 #following:checked ~ .slider {
     left: 483px;
+}
+
+.switchFromFollowers {
+    text-decoration: none;
 }

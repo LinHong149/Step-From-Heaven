@@ -122,7 +122,6 @@ nav {
     /* overflow: scroll; */
 }
 .storyFigure {
-    /* border: 2px black solid; */
     margin: 25px 100px 0 -50px;
 }
 .story {
@@ -135,7 +134,9 @@ nav {
     object-fit: cover;
 }
 .storyCaption {
+    width: 150px;
     text-align: center;
+    word-wrap: break-word;
 }
 .storyButton {
     border-radius: 50%;
