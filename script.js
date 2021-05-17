@@ -111,28 +111,28 @@ followButton.addEventListener ('click', () => {
         followButton.style.backgroundColor = "white";
         followButton.style.color = "rgb(64, 141, 230)";
         followButton.style.border = "1px rgb(64, 141, 230) solid";
-        followButton.style.width = "80px";  
+        // followButton.style.width = "80px";  
     }
     else if (followButton.textContent == "Following"){
         followButton.textContent = "Follow"
         followButton.style.backgroundColor = "rgb(64, 141, 230)";
         followButton.style.color = "white";
-        followButton.style.width = "60px";
+        // followButton.style.width = "60px";
     }
 })
 
 
-// --------------------------Like Button
+// // --------------------------Like Button
 
-const likeButton = document.getElementById("likeButton")
+// const likeButton = document.getElementById("likeButton")
 
-likeButton.addEventListener ('click', () => {
-    if (likeButton.textContent == "♡") {
-        likeButton.textContent = "❤️"
-        likeButton.style.fontSize = "18px"
-    }
-    else if (likeButton.textContent == "❤️") {
-        likeButton.textContent = "♡"
-        likeButton.style.fontSize = "25px"
-    }
-})
+// likeButton.addEventListener ('click', () => {
+//     if (likeButton.textContent == "♡") {
+//         likeButton.textContent = "❤️"
+//         likeButton.style.fontSize = "18px"
+//     }
+//     else if (likeButton.textContent == "❤️") {
+//         likeButton.textContent = "♡"
+//         likeButton.style.fontSize = "25px"
+//     }
+// })
